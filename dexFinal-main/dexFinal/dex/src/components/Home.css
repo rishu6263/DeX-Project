@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.home-header {
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ffab00;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.features-section, .stats-section, .cta-section {
+  margin-bottom: 50px;
+}
+
+.features-section h2, .stats-section h2, .cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.features-cards, .stats-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card, .stat-card {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.feature-card:hover, .stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card h3, .stat-card h3 {
+  color: #ffab00;
+  margin-bottom: 10px;
+}
+
+.cta-section {
+  background: #ffab00;
+  color: #141e30;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: #141e30;
+  color: #ffab00;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background: #243b55;
+  color: #ffab00;
+}
+
+.home-footer {
+  background: #222;
+  padding: 20px;
+  color: #ccc;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links, .footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-links h3, .footer-info h3 {
+  margin-bottom: 10px;
+  color: #ffab00;
+}
+
+.footer-links a {
+  display: block;
+  color: #ffab00;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .features-cards, .stats-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
